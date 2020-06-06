@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Details.DetailsController">
+   <top>
+      <Pane prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #C0362B;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="392.0" layoutY="14.0" text="Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <TableView fx:id="table" prefHeight="400.0" prefWidth="628.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="col_user" prefWidth="116.66665649414062" text="Username" />
+          <TableColumn fx:id="col_bid_id" prefWidth="78.66668701171875" text="Bid ID" />
+            <TableColumn fx:id="col_item_id" prefWidth="76.66665649414062" text="Item ID" />
+            <TableColumn fx:id="col_user_bid" prefWidth="94.0" text="User bid" />
+            <TableColumn fx:id="col_rating" prefWidth="93.3333740234375" text="Rating" />
+            <TableColumn fx:id="col_current_highest" prefWidth="141.3333740234375" text="Current Highest Bid" />
+        </columns>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>
